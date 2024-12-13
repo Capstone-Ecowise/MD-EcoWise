@@ -1,0 +1,216 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="@drawable/bottom_sheet_background_new">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+        android:id="@+id/handleBar"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/handle_bar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/informasi_badge"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintTop_toBottomOf="@id/handleBar" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="?attr/colorOnSecondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+<!--        Seed    -->
+        <com.example.capstone.view.ui.CustomTextViewRegular
+        android:id="@+id/text_seed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="@string/seed_tier"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <ImageView
+        android:id="@+id/badge_seed_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/badge_seed_tier"
+        app:layout_constraintTop_toBottomOf="@id/text_seed" />
+
+        <TextView
+        android:id="@+id/text_seed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="16dp"
+        android:textAlignment="center"
+        android:text="@string/text_seed_tier"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/badge_seed_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Sprout-->
+        <com.example.capstone.view.ui.CustomTextViewRegular
+        android:id="@+id/text_sprout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="@string/sprout_tier"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintTop_toBottomOf="@+id/text_seed2" />
+
+        <ImageView
+            android:id="@+id/badge_sprout_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/badge_sprout_tier"
+            app:layout_constraintTop_toBottomOf="@id/text_sprout" />
+
+        <TextView
+            android:id="@+id/text_sprout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="16dp"
+            android:textAlignment="center"
+            android:text="@string/text_sprout_tier"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/badge_sprout_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Sapling-->
+        <com.example.capstone.view.ui.CustomTextViewRegular
+            android:id="@+id/text_sapling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="@string/sapling_tier"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintTop_toBottomOf="@+id/text_sprout2" />
+
+        <ImageView
+            android:id="@+id/badge_sapling_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/badge_sapling_tier"
+            app:layout_constraintTop_toBottomOf="@id/text_sapling" />
+
+        <TextView
+            android:id="@+id/text_sapling2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="16dp"
+            android:textAlignment="center"
+            android:text="@string/text_sapling_tier"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/badge_sapling_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Tree-->
+        <com.example.capstone.view.ui.CustomTextViewRegular
+            android:id="@+id/text_tree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="@string/tree_tier"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintTop_toBottomOf="@+id/text_sapling2" />
+
+        <ImageView
+            android:id="@+id/badge_tree_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/badge_tree_tier"
+            app:layout_constraintTop_toBottomOf="@id/text_tree" />
+
+        <TextView
+            android:id="@+id/text_tree2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="16dp"
+            android:textAlignment="center"
+            android:text="@string/text_tree_tier"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/badge_tree_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Forest Guardian Tier-->
+        <com.example.capstone.view.ui.CustomTextViewRegular
+            android:id="@+id/text_forest_guardian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="@string/fg_tier"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintTop_toBottomOf="@+id/text_tree2" />
+
+        <ImageView
+            android:id="@+id/badge_forest_guardian_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/badge_forestguardian_tier"
+            app:layout_constraintTop_toBottomOf="@id/text_forest_guardian" />
+
+        <TextView
+            android:id="@+id/text_forestGuardian2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="16dp"
+            android:textAlignment="center"
+            android:text="@string/text_fg_tier"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@id/badge_forest_guardian_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
